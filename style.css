@@ -94,11 +94,13 @@ hr{
 #order{
     padding-top: 2%;
 }
+
 #order h1{
     padding: 2% 0;
 
 
 }
+
 .form-group{
     margin-left: 10%;
 }
@@ -107,9 +109,11 @@ hr{
     font-size: 1.5em;
     width: 400px;
 }
+
 label{
     font-size: 1.6em;
 }
+
 .order{
     border: 2px solid rgb(212, 71, 71);
 
@@ -126,7 +130,7 @@ label{
 
 
 .btn{
-    width: 220px;
+    width: 180px;
     font-size: 1.6em;
     border-radius: 45%;
     border: 3px solid;
@@ -138,21 +142,44 @@ label{
     margin-top: 5%;
 }
 
+.hours{
+    margin-top: 5%;
+}
 
 .hours #two, .hours #four{
     margin-left: 5%;
 }
 
 /*Contact us*/
+#form{
+    justify-content: center;
+    justify-items: center;
+}
 
 .contacts{
     margin-top: 10%;
-    padding: 2% ;
+    padding: 2%;
     border: 2px solid rgb(47, 186, 47);
 }
 
 .contacts h1{
     padding: 2% 0;
+}
+.maps{
+    margin: 3% 3%;
+}
+.phone-email{
+    margin-top: 6%;
+}
+.phone-email a{
+    margin: 6% 3% 6% 3%;
+    font-size: 2em;
+    color: black;
+}
+.phone-email i{
+    font-size: 2.8rem;
+    padding: 5% 0;
+    color: rgb(31, 168, 31);
 }
 
 /*Footer*/
@@ -167,6 +194,10 @@ label{
     color: white;
     font-size: 1.6em;
     margin: 0 15px;
+}
+
+.social{
+    padding: 3% 0;
 }
 
 /*Sreen media max 600px*/
@@ -187,7 +218,20 @@ label{
     #contacts{
         margin: 2% 3% 0 3%;
     }
+
     #footer{
         margin-top: 4%;
+    }
+
+    .form-control{
+        width: 320px;
+    }
+    
+    .btn{
+        width: 150px;
+    }
+
+    iframe{
+        width: 400px;
     }
 }
