@@ -232,8 +232,8 @@
               </div>
               
               <div class=" form-group col">
-                <label for="name">Email*</label>
-                <input class="form-control" type="email" class="email" id="email" required>
+                <label for="phone">Telefono*</label>
+                <input class="form-control" type="tel" class="phone" id="phone" required>
               </div>
               
 
@@ -316,28 +316,21 @@
     <div id="contacts">
       <div class="container contacts">
         <div class="row">
-          <h1 class="cl-12 text-center">Contatti</h1>
+          <h1 class="cl-12 text-center">Contattaci</h1>
 
-          <form action="" class="container col-12 form">
+          <form action="" class="container col-12" id="form">
             <div class="row">
               <div class="form-group col">
-                <label for="firstName">Nome</label>
-                <input class="form-control" type="text" id="firstName">
-              </div>
+                <label for="firstName">Nome e Cognome</label>
+                <input class="form-control" type="text" id="firstName" required>
 
-              <div class="form-group col">
-                <label for="lastName">Cognome</label>
-                <input class="form-control" type="text" id="lastName">
-              </div>
-
-              <div class="form-group col">
                 <label for="emailContact">Email</label>
-                <input class="form-control" type="email" id="emailContact">
+                <input class="form-control" type="email" id="emailContact" required>
               </div>
 
               <div class="form-group col">
                 <label for="message">Messaggio</label>
-                <textarea class="form-control" name="" id="message" cols="50" rows="3"></textarea>
+                <textarea class="form-control" name="" id="message" cols="20" rows="4" required></textarea>
               </div>
             </div>
 
@@ -350,6 +343,26 @@
 
             </div>
           </form>
+
+          <div class="col maps">
+            <h3 class="text-center">Vieni trovarci</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90919.40024759618!2d10.985062858716146!3d44.59229527653986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fdd189118f64d%3A0x4079b0bfcbb7d20!2s41013%20Castelfranco%20Emilia%20MO!5e0!3m2!1sit!2sit!4v1684158242637!5m2!1sit!2sit" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col text-center phone-email">
+            <div class="col">
+              <a href="">
+                <i class="fa fa-phone"></i>
+                Chiamaci
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                Scrivici
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
