@@ -168,9 +168,13 @@ label{
 .maps{
     margin: 3% 3%;
 }
+.maps h3{
+    padding: 3% 0;
+}
 .phone-email{
     margin-top: 12%;
 }
+
 .phone-email a{
     font-size: 2em;
     color: black;
@@ -181,6 +185,7 @@ label{
     color: rgb(31, 168, 31);
     transform: all 1s;
 }
+
 .phone-email i:hover{
     font-size: 2.4em;
     transform: scale(1.1);
@@ -214,17 +219,29 @@ label{
     color: rgb(31, 168, 31);
 }
 
-/*Sreen media max 600px*/
-@media screen and (max-width: 600px) {
+/*Sreen media max 960px*/
+@media only screen and (max-width: 940px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .img-business{
+        margin-top: 5%;
+    }
+
     #about{
         margin: 10% 3% 0 3%;
     }
+
     #products{
         margin: 5% 3% 0 3%;
     }
+
     #menu{
         margin: 2% 3% 0 3%;
     }
+
     #order{
         margin: 2% 3% 0 3%;
     }
@@ -237,8 +254,12 @@ label{
         margin-top: 4%;
     }
 
+    .form-group{
+        padding: 0 2%;
+    }
+
     .form-control{
-        width: 320px;
+        width: 300px;
     }
     
     .btn{
@@ -246,6 +267,6 @@ label{
     }
 
     iframe{
-        width: 400px;
+        width: 350px;
     }
 }
