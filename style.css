@@ -1,0 +1,193 @@
+*{
+    font-family: 'Amatic SC', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Nav section*/
+.navbar{
+    padding: 20px 30px;
+    font-size: 2rem;
+    
+}
+
+.navbar-brand{
+    font-size: 1.1em;
+    color: white;
+}
+
+/*Intro section*/
+#home{
+    padding-bottom: 10%;
+}
+
+/*About us*/
+#about
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.about{
+    margin-top: 10%;
+    padding: 2%;
+    border: 2px solid rgb(47, 186, 47);
+}
+
+.about h1{
+    padding: 5% 0;
+}
+
+.img-business{
+    padding: 2% 2%;
+}
+
+/*Our products*/
+
+#products
+{
+    padding-top: 2%;
+}
+
+.products{
+    margin-top: 10%;
+    padding: 2%;
+    border: 2px solid rgb(238, 122, 122);
+}
+
+.products h1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.carousel-item img{
+    margin: 3% 0;
+}
+
+/*Our menu*/
+#menu
+{
+    padding-top: 2%;
+}
+
+.menu{
+    margin-top: 10%;
+    padding: 2% ;
+    border: 2px solid rgb(47, 186, 47);
+}
+
+.menu h1{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+hr{
+    border-top: 2px solid rgb(47, 186, 47);
+}
+
+/*Order*/
+
+#order{
+    padding-top: 2%;
+}
+#order h1{
+    padding: 2% 0;
+
+
+}
+.form-group{
+    margin-left: 10%;
+}
+
+.form-control{
+    font-size: 1.5em;
+    width: 400px;
+}
+label{
+    font-size: 1.6em;
+}
+.order{
+    border: 2px solid rgb(212, 71, 71);
+
+    margin-top: 10%;
+}
+
+.select{
+    margin-top: 5%;
+}
+
+#tortelini, #primi, #secondi,#deserti{
+    color:rgb(212, 71, 71) ;
+}
+
+
+.btn{
+    width: 220px;
+    font-size: 1.6em;
+    border-radius: 45%;
+    border: 3px solid;
+    margin:3% 5%;
+    opacity: 0.75;
+}
+
+.data{
+    margin-top: 5%;
+}
+
+
+.hours #two, .hours #four{
+    margin-left: 5%;
+}
+
+/*Contact us*/
+
+.contacts{
+    margin-top: 10%;
+    padding: 2% ;
+    border: 2px solid rgb(47, 186, 47);
+}
+
+.contacts h1{
+    padding: 2% 0;
+}
+
+/*Footer*/
+#footer{
+    margin-top: 10%;
+    background-color: rgb(212, 71, 71);
+    opacity: 0.75;
+    color: white;
+}
+
+#footer a{
+    color: white;
+    font-size: 1.6em;
+    margin: 0 15px;
+}
+
+/*Sreen media max 600px*/
+@media screen and (max-width: 600px) {
+    #about{
+        margin: 10% 3% 0 3%;
+    }
+    #products{
+        margin: 5% 3% 0 3%;
+    }
+    #menu{
+        margin: 2% 3% 0 3%;
+    }
+    #order{
+        margin: 2% 3% 0 3%;
+    }
+
+    #contacts{
+        margin: 2% 3% 0 3%;
+    }
+    #footer{
+        margin-top: 4%;
+    }
+}
