@@ -19,13 +19,13 @@
 
     <!--Navbar section-->
     <nav class="navbar navbar-light fixed-top" style="background-color: rgb(238, 122, 122);">
-        <div class="container-fluid">
+        <div class="container-fluid nav-section">
           <a class="navbar-brand" href="#">Nome attività</a>
-          <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler"  type="button" style="color: white;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header offcanvas-md">
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -48,19 +48,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts">Contatti</a>
                  </li>
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -223,7 +210,7 @@
         <div class="row">
           <h1 class="col-12 text-center">Ordina</h1>
 
-          <form class="col-12 container" id="order">
+          <form class="col-12 container justify-content-center" id="order">
             <div class="row">
 
               <div class=" form-group col">
@@ -237,7 +224,7 @@
               </div>
               
 
-              <div class="col-12 justify-content-center">
+              <div class="col-12">
                 <div class="row">
                   <div class=" form-group col select">
                     <label for="select">Scelli dal menu*</label>
@@ -295,7 +282,7 @@
             </div>
           
             <!--Buttons-->
-            <div class="col-12 text-center"> 
+            <div class="col-12 text-center buttons"> 
               <input href="" type="button" class="btn btn-lg btn-outline-danger" value="PRENOTA e RITIRA">
               </input>
 
@@ -316,7 +303,7 @@
     <div id="contacts">
       <div class="container contacts">
         <div class="row">
-          <h1 class="cl-12 text-center">Contattaci</h1>
+          <h1 class="col-12 text-center">Contattaci</h1>
 
           <form action="" class="container col-12" id="form">
             <div class="row">
@@ -334,7 +321,7 @@
               </div>
             </div>
 
-            <div class="text-center"> 
+            <div class="text-center buttons"> 
               <input type="button" class="btn btn-lg btn-outline-success" value="INVIA">
               </input>
 
@@ -370,11 +357,10 @@
     </div>
 
     <!--Footer section   -->
-    <footer id="footer">
-      <div class="container">
+    <footer class="container-fluid" id="footer">
         <div class="row">
           <!--Social-->
-          <section class="col-12 social text-center">
+          <div class="col-12 social text-center">
             <h2>Seguici</h2>
             <a href="">
               <i class="fa fa-facebook"></i>
@@ -382,23 +368,103 @@
             <a href="">
               <i class="fa fa-instagram"></i>
             </a>
-          </section>
+          </div>
 
-          <section class="col-8">
-            <h3>© 2023 All rights reserved</h3>
-          </section>
+          <div class="col-12 text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center copy">
+                  <h5>Nome Attività © 2023 All rights reserved - P.I.  numero</h5>
+                </div>
+      
+                <div class="col text-center create">
+                  <h5>Creato con &hearts; da  <a class="tech" href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"> Butterfly Tech CreativeSolution</a></h5>
+                </div>
+      
+                <div class="col text-center service">
+                  <h5><a class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Termini di servizio</a></h5>
 
-          <section class="col-4">
-            <h3>Creato con &hearts; da Butterfly Tech CreativeSolution</h3>
-          </section>
+                  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                      <h4 class="offcanvas-title" id="offcanvasBottomLabel"><strong>TERMINI DI SERVIZIO</strong></h4>
+                      <br>
+                      
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body large">
+                      <h5>
+                        <p> 
+                          I presenti termini di utilizzo hanno lo scopo di garantire il miglior uso del sito, nel rispetto dei diritti di tutti, anche nel rispetto della privacy e della proprietà intellettuale.
+
+                          1. Condizioni d’uso del Sito
+
+                          Il Sito potrà essere oggetto di modifiche e aggiornamenti.
+                          L’utilizzo del Sito implica l’accettazione da parte dell’utente delle presenti condizioni d’uso e il loro impegno a rispettarle.
+                          Si informano gli utenti che tali condizioni possono essere modificate in qualsiasi momento.
+                        </p>
+
+                        <p>
+                          2. Proprietà Intellettuale
+                           Il contenuto del Sito, compresi, senza limitazione, qualsiasi logo, marchio o foto sul Sito sono protetti in base ai diritti di proprietà intellettuale, o di qualsiasi altra disposizione legale applicabile. Sono rispettati i diritti di proprietà intellettuale di terze parti, e tutte le disposizioni di legge per tutelare gli interessi di terzi. Tuttavia, se si pensa che il Sito possa violare qualsivoglia proprio diritto, Vi invitiamo a scriverci direttamente presso i contatti summenzionati per procedere alla rimozione del contenuto in questione dopo aver ricevuto notifica scritta del titolare del diritto d’autore debitamente verificato.
+                        </p>
+                        
+                        <p>
+                          3. Link a altri siti
+                          Il Sito contiene collegamenti ad altri siti web. Il Titolare del Sito Internet non ha alcun controllo sugli stessi, né può controllarne o verificarne il contenuto. Spetta quindi all’utente prendere conoscenza degli impegni di ciascun blog / social network / sito web che visita. In particolare, non abbiamo controllo sulle pratiche dei siti di terze parti per la raccolta, il trattamento dei dati personali e della privacy. Spetta quindi all’utente prendere conoscenza degli impegni del Titolare del Sito Internet sulla privacy, ma anche degli impegni di qualsivoglia blog o social network o sito associato con il sito che contiene tale link, e utilizzare solo i siti di cui si accettano il contenuto e le regole d’utilizzo.
+                          Il Titolare del Sito Internet declina ogni responsabilità per qualsiasi collegamento ad un altro sito web e che fa riferimento al Sito. Il Sito può essere associato a tale link e il suo contenuto non specificatamente autorizzato dal Titolare del Sito Internet.
+                        </p>
+                        
+                        <p>
+                          4. Responsabilità
+                          Il Titolare del Sito Internet svolge un regolare aggiornamento dei suoi contenuti e dei dispositivi in atto sul sito per consentire l’accesso e l’uso del Sito nelle migliori condizioni per l’utente. Tuttavia, il Titolare del Sito Internet non può garantire la tempestività, accuratezza e completezza dei contenuti sul Web.
+                          L’utente in questo contesto, è pienamente consapevole del fatto che i contenuti presenti nel Sito sono a titolo indicativo.
+                          Inoltre, Il Titolare del Sito Internet si riserva il diritto di apportare modifiche al sito in qualsiasi momento lo ritenga opportuno, e non può dunque garantire all’utente l’accesso a tutto il Sito in qualsiasi momento, senza interruzione in tempo utile, in sicurezza e senza errori.
+                          Si precisa che i cambiamenti possono essere effettuati sulla natura o portata dei servizi disponibili.
+                          Si precisa che Il Titolare del Sito Internet non potrà essere ritenuto responsabile per danni ad un utente causati da azioni di terzi che per mezzo di tecniche sleali abbiano utilizzato le informazioni pubblicate sul sito.
+                          Il Titolare del Sito Internet non può essere ritenuto responsabile per eventuali danni subiti dall’utente date le caratteristiche della rete e / o le configurazioni tecniche.
+                          Fatte salve le disposizioni di legge, le presenti condizioni sono soggette al diritto italiano e tutte le controversie concernenti la loro applicazione e interpretazione saranno sottoposte alla cognizione esclusiva del Tribunale di Modena.
+                        </p>
+                        
+                        <p>
+                          5. Limitazione di responsabilità
+                          Fatte salve le disposizioni inderogabili di legge, Il Titolare del Sito Internet non sarà responsabile per qualsiasi danno o lesione conseguenti all’uso del materiale di cui all’articolo 1 nonché derivanti da qualsiasi interruzione nella esecuzione del programma, errore, omissione, interruzione, difetto, ritardo nell’operazione di trasmissione, virus o caduta di linea.
+                          Il Titolare del Sito Internet non sarà responsabile inoltre per qualsiasi danno o lesione che risultino dall’utilizzo o dalla incapacità di utilizzo del materiale incluso nel Sito o che derivino dalla condotta di altri utenti che violino le presenti condizioni.
+                          L’utente che intenda esercitare un diritto, una rivendicazione o un’azione contro un qualsiasi altro utente in merito all’utilizzo dei servizi offerti dal Sito si impegna a evitare qualsivoglia coinvolgimento del Titolare del Sito Internet e dei soggetti dal medesimo incaricati per la gestione del Sito.
+                          Il materiale in questo Sito potrebbe includere imprecisioni tecniche o errori tipografici.
+                          Il Titolare del Sito Internet può effettuare cambiamenti e miglioramenti in qualsiasi momento.
+                          Il materiale in questo sito è messo a disposizione “così com’è” e senza garanzia alcuna, espressa o implicita, in conformità alla legge applicabile e nei limiti da questa consentiti, il Titolare del Sito Internet non presta alcuna garanzia, incluse quelle di commerciabilità e idoneità a qualsivoglia utilizzo.
+                          Il Titolare del Sito Internet non garantisce che le funzioni contenute nel materiale saranno prive di interruzioni od esenti da errore, o che tali vizi saranno corretti, o che questo sito o il server che lo rende disponibile non siano esenti da virus o da componenti nocivi. Il Titolare del Sito Internet non fornisce dichiarazioni o garanzie in merito all’utilizzo o ai risultati dell’utilizzo del materiale in questo sito, per quanto riguarda la loro correttezza, accuratezza o affidabilità. le spese di riparazione, revisione o correzione saranno interamente a carico dell’utente e non del Titolare del Sito Internet. Ove le legislazioni nazionali applicabili al presente accordo, diverse dalla legge applicabile di seguito indicata, vietino l’esclusione di garanzia, l’esclusione suddetta non sarà applicabile.
+                        </p>
+                        
+                        <p>
+                          6. Limitazioni all’uso del materiale
+                         Il materiale proveniente dal presente Sito e da qualsiasi altro sito del World Wide Web posseduto, operato, in licenza o controllato dal Titolare del Sito Internet non può essere copiato, distribuito, modificato, ripubblicato, riprodotto, scaricato o trasmesso con qualsiasi mezzo, senza il precedente consenso scritto.
+                        </p>
+
+                        <p>
+                          7. Proposte
+                          Tutte le osservazioni, suggerimenti, idee, materiali grafici o altra informazione comunicata al Titolare del Sito Internet (di seguito denominati collettivamente “Informazione”) diverrà proprietà della medesima. L’utente rinuncia fin d’ora ad ogni compenso e/o remunerazione non solo economica ma a qualsivoglia titolo. L’Informazione non sarà soggetta ad alcun obbligo di riservatezza. Il Titolare titolare della pagina web sarà libero di utilizzare l’Informazione come meglio ritiene senza che per questo derivi al titolare della pagina web medesima alcun obbligo né alcuna responsabilità.
+                          Il mittente prende atto di essere responsabile di qualsiasi materiale inviato; il mittente, e non Il Titolare del Sito Internet, ha la totale responsabilità del messaggio, inclusa la sua legalità, attendibilità, appropriatezza, originalità e conformità ai diritti di proprietà.
+                          Ai sensi e per gli effetti degli articoli 1341 e 1342 del Codice Civile l’utente dichiara espressamente di accettare le pattuizioni di cui agli articoli 4. “Responsabilità (foro competente)”; 5. “Limitazioni di responsabilità” .  
+                        </p>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </footer>
 
 
 
 
+    <!--Script Font Awesome-->
     <script src="https://kit.fontawesome.com/078e46060f.js" crossorigin="anonymous"></script>
+    <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!--Our script-->
+    <script src="scripts.js"></script>
   </body>
 </html>

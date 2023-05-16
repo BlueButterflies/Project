@@ -14,11 +14,11 @@ a{
     font-size: 2rem;
     
 }
-
 .navbar-brand{
     font-size: 1.1em;
     color: white;
 }
+
 
 /*Intro section*/
 #home{
@@ -200,12 +200,37 @@ label{
     color: white;
 }
 
-#footer a{
+#footer i{
     color: white;
     font-size: 1.6em;
     margin: 0 15px;
+    transform:  all 1s;
 }
 
+#footer i:hover{
+    color: rgb(31, 168, 31);
+    font-size: 2em;
+    transform: scale(1.1);
+}
+
+.tech, .service a{
+    text-decoration: none;
+    color: white;
+    transform: all 1s;
+    cursor: pointer;
+}
+
+.tech:hover, .service a:hover{
+    transform: scale(1.1);
+    color: rgb(31, 168, 31);
+}
+.service .offcanvas{
+    height: 600px;
+    font-size: 1.4em;
+    color: black;
+    background-color: white;
+    
+}
 .social{
     padding: 3% 0;
 }
@@ -258,8 +283,18 @@ label{
         padding: 0 2%;
     }
 
+    .form-group label{
+        margin-left: 8%;
+    }
+
     .form-control{
-        width: 300px;
+        width: 270px;
+        margin-left: 8%;
+    }
+    
+    .buttons .btn{
+        width: 150px;
+        margin-top: 4%;
     }
     
     .btn{
@@ -267,7 +302,7 @@ label{
     }
 
     iframe{
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -310,16 +345,21 @@ label{
     .form-group{
         padding: 0 2%;
     }
+    .form-group label{
+        margin-left: 8%;
+    }
 
     .form-control{
-        width: 300px;
+        width: 270px;
+        margin-left: 8%;
     }
     
-    .btn{
+    .buttons .btn{
         width: 150px;
+        margin-top: 4%;
     }
 
     iframe{
-        width: 250px;
+        width: 300px;
     }
 }
