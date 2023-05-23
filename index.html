@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,18 @@
 
     <!--My style-->
     <link href="style.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
 
     <!--Navbar section-->
     <nav class="navbar navbar-light fixed-top" style="background-color: rgb(238, 122, 122);">
         <div class="container-fluid nav-section">
           <a class="navbar-brand" href="#">Nome attività</a>
-          <button class="navbar-toggler"  type="button" style="color: white;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header offcanvas-md">
+            <div class="offcanvas-header offcanvas-sm">
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -56,102 +56,64 @@
 
     <!--Intro section-->
     <div id="home">
-      <div class="container home text-center">
+      <div class="container-fluid home">
         <div class="row">
-            <section class="col-12 img-business">
-                <img class="img-fluid" src="images/logo.png" alt="Responsive image">
-            </section>
-  
-            <section class="col-12 description">
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, libero excepturi voluptatem <br>
-                    fugiat cum asperiores illo corporis tempora? <br>
-                    Beatae debitis voluptas tempore dolor tempora enim similique cupiditate accusamus, rerum eum.
-                </h2>
-            </section>
-
-            
+          <div class="col business-image text-center">
+            <img src="images/logo.png" alt="">
+          </div>  
+          <div class="col-12 business-description text-center">
+            <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, libero excepturi voluptatem <br>
+                fugiat cum asperiores illo corporis tempora? <br>
+                Beatae debitis voluptas tempore dolor tempora enim similique cupiditate accusamus, rerum eum.
+            </h1>
+          </div>
+          
         </div>
       </div>
     </div>
-      
+
     <!--About us section-->
-   <div id="about">
-    <div class="container about">
-      <div class="row">
-          <section class="col img-business">
-              <img class="img-fluid rounded mx-auto d-block" src="https://media.istockphoto.com/id/917737514/it/foto/barmans-mani-cospargere-il-succo-nel-bicchiere-da-cocktail.jpg?s=612x612&w=0&k=20&c=78Vbx2RJV1hGN2Ur8mgTVKAnAw7gw0S5-Cgv7eRBVhY=" alt="Responsive image">
-          </section>
+    <div id="about">
+      <div class="container-fluid about text-center">
+        <div class="description-about">
+          <h1>Chi siamo</h1>
 
-          <section class="col description-about text-center">
-              <h1>Chi siamo</h1>
-
-              <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, libero excepturi voluptatem <br>
-                  fugiat cum asperiores illo corporis tempora? <br>
-                  Beatae debitis voluptas tempore dolor tempora enim similique cupiditate accusamus, rerum eum.
-              </h2>
-          </section>
+          <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Repellat, libero excepturi voluptatem fugiat cum asperiores<br> 
+              illo corporis tempora? Beatae debitis voluptas tempore dolor<br> tempora enim similique cupiditate accusamus, rerum eum.
+          </h2>
+        </div>
       </div>
     </div>
-   </div>
 
     <!--Products section-->
     <div id="products">
-      <div class="container text-center products">
-        <div class="row">
-            <section class="col">
-                <h1>Nostri prodotti</h1>
+      <div class="container-fluid text-center products">
+        
+        <div class="description-products">
+          <h1>Nostri prodotti</h1>
 
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, optio reiciendis. <br>
-                     Ipsa amet nobis perspiciatis necessitatibus sequi, <br>
-                    sed, eligendi dolorem fugit est animi quae dolorum. Est natus dignissimos facere dolorum.
-                </h2>
-            </section>
-
-            <section class="col">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="img-fluid rounded mx-auto d-block" src="https://media.istockphoto.com/id/1278007471/it/foto/tortellini-cucina-italiana-fatti-in-casa.jpg?s=612x612&w=0&k=20&c=zO5cIIXh3u21Idsn10dUrQTLWJjP-VSyllhFjYZZKX4=" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="img-fluid rounded mx-auto d-block" src="https://media.istockphoto.com/id/1311663637/it/foto/le-mani-fanno-tortellini-fatti-in-casa-messa-a-fuoco-selettiva.jpg?s=612x612&w=0&k=20&c=lgMtS_Q9JOWcjD8jr1zT6qiFsyTGNYGYxthI7Glx0pk=" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="img-fluid rounded mx-auto d-block" src="https://media.istockphoto.com/id/1278004287/it/foto/tortellini-cucina-italiana-fatti-in-casa.jpg?s=612x612&w=0&k=20&c=Ve1EeBUmmzQXA4yp2QPRa68LAiryXzgaFcZXzsA1ci4=" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </section>
+          <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, optio reiciendis. <br>
+              Ipsa amet nobis perspiciatis necessitatibus sequi, <br>
+              sed, eligendi dolorem fugit est animi quae dolorum. Est natus dignissimos facere dolorum.
+          </h2>
         </div>
-    </div>
+      </div>
     </div>
 
     <!--Our menu section-->
     <div id="menu">
-      <div class="container menu">
+      <div class="container-fluid menu">
         <div class="row">
-          <section class="col-12 text-center">
+          <div class="col-12 text-center">
             <h1>Nostro menu</h1>
-          </section>
+          </div>
   
-          <section class="col-12 text-center">
-            <div class="container">
+          <div class="col-12 text-center">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col primi">
                   <h2>Primi</h2>
@@ -199,99 +161,105 @@
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </div>
-
-    <!--Order food section-->
-    <div id="order">
-      <div class="container order">
+    
+     <!--Order food section-->
+     <div id="order"> 
+      <div class="container-fluid order">
+        <h1 class="col-12 text-center">Ordina</h1>
         <div class="row">
-          <h1 class="col-12 text-center">Ordina</h1>
-
-          <form class="col-12 container justify-content-center" id="order">
+          
+          <form class="col-12" id="formOrder">
             <div class="row">
 
-              <div class=" form-group col">
-                <label for="name">Nome e Cognome*</label>
-                <input class="form-control" type="text" class="name" id="name" required>
-              </div>
-              
-              <div class=" form-group col">
-                <label for="phone">Telefono*</label>
-                <input class="form-control" type="tel" class="phone" id="phone" required>
-              </div>
-              
-
+              <!--name and email-->
               <div class="col-12">
                 <div class="row">
-                  <div class=" form-group col select">
-                    <label for="select">Scelli dal menu*</label>
-                    <select class="form-control" name="" id="select" required>
-                      <option value="">Seleziona dal menu</option>
-                      <option value="" id="tortelini" disabled>Nostri tortelini</option>
-                      <option value="">Tortelini 1kg 30euro</option>
-                      <option value="" id="primi" disabled>Primi</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="" id="secondi" disabled>Secondi</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="" id="deserti" disabled>Deserti</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                      <option value="">Prodotto 20 euro</option>
-                    </select>
+                  <div class="col name">
+                    <label for="orderName">Nome e Cognome</label><br>
+                    <input class="" type="text"  id="orderName" required>
                   </div>
-        
-                  <div class=" form-group col data">
-                    <label for="data">Scielli la  data di ritiro*</label>
-                    <input class="form-control" type="date" name="" id="data" required>
-                  </div>  
+                  
+                  <div class="col email">
+                    <label for="orderEmail">Email</label><br>
+                    <input class="" type="email"  id="orderEmail" required>
+                  </div>
                 </div>
               </div>
               
-              <div class="col-12 text-center hours">
-                <label>Scielli l'ora di ritiro*</label>
-                <div>
-                  <input type="checkbox" name="" id="one" checked>
-                  <label for="one">10-14</label>
-                  <input type="checkbox" name="" id="two">
-                  <label for="two">14-17</label>
+              <!--phone and products menu-->
+              <div class="col-12">
+                <div class="row">
+                  <div class="col tel">
+                    <label for="orderTel">Telefono</label><br>
+                    <input class="" type="tel" id="orderTel" required>
+                  </div>
+    
+                  <div class=" col select">
+                    <label for="selectProduct">Scegli dal menu</label><br>
+                    <select class="" id="selectProduct" required>
+                      <option>Seleziona</option>
+                      <option  id="tortelini" disabled>Nostri tortellini</option>
+                      <option>Tortellini 1kg 30euro</option>
+                      <option id="primi" disabled>Primi</option>
+                      <option>Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option  id="secondi" disabled>Secondi</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option>Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option  id="deserti" disabled>Deserti</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                      <option >Prodotto 20 euro</option>
+                    </select>
+                  </div>
                 </div>
-              
-                <div>
-                  <input type="checkbox" name="" id="three">
-                  <label for="three">17-20</label>
-                  <input type="checkbox" name="" id="four">
-                  <label for="four">20-22</label>
+              </div>
+
+              <!--data and hours-->
+              <div class="col-12">
+                <div class="row">
+                  <div class="col data">
+                    <label for="data">Scegli la  data di ritiro</label><br>
+                    <input class="" type="date" id="data" required>
+                  </div>  
+
+                  <div class="col hours">
+                    <label>Scegli l'ora di ritiro</label><br>
+                    <select class="" id="selectHour" required>
+                      <option>Seleziona</option>
+                      <option>10 - 14</option>
+                      <option>14 - 17</option>
+                      <option >17 - 20</option>
+                    </select>
+                </div>
+
                 </div>
               </div>
             </div>
           
+            
             <!--Buttons-->
             <div class="col-12 text-center buttons"> 
-              <input href="" type="button" class="btn btn-lg btn-outline-danger" value="PRENOTA e RITIRA">
+              <input type="button" class="btn btn-outline-danger" value="PRENOTA SU WHATSAPP" onclick="sendWhatsapp()">
               </input>
 
-              <input href="" type="button" class="btn btn-lg btn-outline-danger" value="PAGA E RITIRA">
+              <input type="button" class="btn btn-outline-danger" id="send-request" value="PAGA E RITIRA" onclick="pay()">
               </input>
-
-              <input type="reset" class="btn btn-lg btn-outline-danger">
-              </input>
-
             </div>
           </form>
 
@@ -301,54 +269,26 @@
 
     <!--Contacts section-->
     <div id="contacts">
-      <div class="container contacts">
+      <div class="container-fluid contacts">
         <div class="row">
           <h1 class="col-12 text-center">Contattaci</h1>
-
-          <form action="" class="container col-12" id="form">
-            <div class="row">
-              <div class="form-group col">
-                <label for="firstName">Nome e Cognome</label>
-                <input class="form-control" type="text" id="firstName" required>
-
-                <label for="emailContact">Email</label>
-                <input class="form-control" type="email" id="emailContact" required>
-              </div>
-
-              <div class="form-group col">
-                <label for="message">Messaggio</label>
-                <textarea class="form-control" name="" id="message" cols="20" rows="4" required></textarea>
-              </div>
-            </div>
-
-            <div class="text-center buttons"> 
-              <input type="button" class="btn btn-lg btn-outline-success" value="INVIA">
-              </input>
-
-              <input  type="reset" class="btn btn-lg btn-outline-success">
-              </input>
-
-            </div>
-          </form>
-
-          <hr>
-          
+ 
           <div class="col maps">
-            <h3 class="text-center">Vieni trovarci</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90919.40024759618!2d10.985062858716146!3d44.59229527653986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fdd189118f64d%3A0x4079b0bfcbb7d20!2s41013%20Castelfranco%20Emilia%20MO!5e0!3m2!1sit!2sit!4v1684158242637!5m2!1sit!2sit" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 class="text-center">Vieni a visitarci</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90919.40024759618!2d10.985062858716146!3d44.59229527653986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fdd189118f64d%3A0x4079b0bfcbb7d20!2s41013%20Castelfranco%20Emilia%20MO!5e0!3m2!1sit!2sit!4v1684158242637!5m2!1sit!2sit" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <div class="col text-center phone-email">
             <div class="col">
-              <a href="">
+              <a href="tel:">
                 <i class="fa fa-phone"></i>
-                Chiamaci
+                <span>Chiamaci</span> 
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="mailto:">
                 <i class="fa fa-envelope"></i>
-                Scrivici
+                <span>Scrivici</span> 
               </a>
             </div>
           </div>
@@ -358,104 +298,105 @@
 
     <!--Footer section   -->
     <footer class="container-fluid" id="footer">
-        <div class="row">
-          <!--Social-->
-          <div class="col-12 social text-center">
-            <h2>Seguici</h2>
-            <a href="">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </div>
+      <div class="row">
+        <!--Social-->
+        <div class="col-12 social text-center">
+          <h2>Seguici</h2>
+          <a href="">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
 
-          <div class="col-12 text-center">
-            <div class="container">
-              <div class="row">
-                <div class="col text-center copy">
-                  <h5>Nome Attività © 2023 All rights reserved - P.I.  numero</h5>
-                </div>
-      
-                <div class="col text-center create">
-                  <h5>Creato con &hearts; da  <a class="tech" href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"> Butterfly Tech CreativeSolution</a></h5>
-                </div>
-      
-                <div class="col text-center service">
-                  <h5><a class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Termini di servizio</a></h5>
+        <div class="col-12 text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col text-center copy">
+                <h5>Nome Attività © 2023 All rights reserved - P.I.  numero</h5>
+              </div>
+    
+              <div class="col text-center create">
+                <h5>Creato con &hearts; da  <a class="tech" href="https://bluebutterflies.github.io/ButterflyTech/" target="_blank"> Butterfly Tech CreativeSolution</a></h5>
+              </div>
+    
+              <div class="col text-center service">
+                <h5><a class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Termini di servizio</a></h5>
 
-                  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                    <div class="offcanvas-header">
-                      <h4 class="offcanvas-title" id="offcanvasBottomLabel"><strong>TERMINI DI SERVIZIO</strong></h4>
-                      <br>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                  <div class="offcanvas-header">
+                    <h4 class="offcanvas-title" id="offcanvasBottomLabel"><strong>TERMINI DI SERVIZIO</strong></h4>
+                    <br>
+                    
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body large">
+                    <h5>
+                      <p> 
+                        I presenti termini di utilizzo hanno lo scopo di garantire il miglior uso del sito, nel rispetto dei diritti di tutti, anche nel rispetto della privacy e della proprietà intellettuale.
+
+                        1. Condizioni d’uso del Sito
+
+                        Il Sito potrà essere oggetto di modifiche e aggiornamenti.
+                        L’utilizzo del Sito implica l’accettazione da parte dell’utente delle presenti condizioni d’uso e il loro impegno a rispettarle.
+                        Si informano gli utenti che tali condizioni possono essere modificate in qualsiasi momento.
+                      </p>
+
+                      <p>
+                        2. Proprietà Intellettuale
+                         Il contenuto del Sito, compresi, senza limitazione, qualsiasi logo, marchio o foto sul Sito sono protetti in base ai diritti di proprietà intellettuale, o di qualsiasi altra disposizione legale applicabile. Sono rispettati i diritti di proprietà intellettuale di terze parti, e tutte le disposizioni di legge per tutelare gli interessi di terzi. Tuttavia, se si pensa che il Sito possa violare qualsivoglia proprio diritto, Vi invitiamo a scriverci direttamente presso i contatti summenzionati per procedere alla rimozione del contenuto in questione dopo aver ricevuto notifica scritta del titolare del diritto d’autore debitamente verificato.
+                      </p>
                       
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body large">
-                      <h5>
-                        <p> 
-                          I presenti termini di utilizzo hanno lo scopo di garantire il miglior uso del sito, nel rispetto dei diritti di tutti, anche nel rispetto della privacy e della proprietà intellettuale.
+                      <p>
+                        3. Link a altri siti
+                        Il Sito contiene collegamenti ad altri siti web. Il Titolare del Sito Internet non ha alcun controllo sugli stessi, né può controllarne o verificarne il contenuto. Spetta quindi all’utente prendere conoscenza degli impegni di ciascun blog / social network / sito web che visita. In particolare, non abbiamo controllo sulle pratiche dei siti di terze parti per la raccolta, il trattamento dei dati personali e della privacy. Spetta quindi all’utente prendere conoscenza degli impegni del Titolare del Sito Internet sulla privacy, ma anche degli impegni di qualsivoglia blog o social network o sito associato con il sito che contiene tale link, e utilizzare solo i siti di cui si accettano il contenuto e le regole d’utilizzo.
+                        Il Titolare del Sito Internet declina ogni responsabilità per qualsiasi collegamento ad un altro sito web e che fa riferimento al Sito. Il Sito può essere associato a tale link e il suo contenuto non specificatamente autorizzato dal Titolare del Sito Internet.
+                      </p>
+                      
+                      <p>
+                        4. Responsabilità
+                        Il Titolare del Sito Internet svolge un regolare aggiornamento dei suoi contenuti e dei dispositivi in atto sul sito per consentire l’accesso e l’uso del Sito nelle migliori condizioni per l’utente. Tuttavia, il Titolare del Sito Internet non può garantire la tempestività, accuratezza e completezza dei contenuti sul Web.
+                        L’utente in questo contesto, è pienamente consapevole del fatto che i contenuti presenti nel Sito sono a titolo indicativo.
+                        Inoltre, Il Titolare del Sito Internet si riserva il diritto di apportare modifiche al sito in qualsiasi momento lo ritenga opportuno, e non può dunque garantire all’utente l’accesso a tutto il Sito in qualsiasi momento, senza interruzione in tempo utile, in sicurezza e senza errori.
+                        Si precisa che i cambiamenti possono essere effettuati sulla natura o portata dei servizi disponibili.
+                        Si precisa che Il Titolare del Sito Internet non potrà essere ritenuto responsabile per danni ad un utente causati da azioni di terzi che per mezzo di tecniche sleali abbiano utilizzato le informazioni pubblicate sul sito.
+                        Il Titolare del Sito Internet non può essere ritenuto responsabile per eventuali danni subiti dall’utente date le caratteristiche della rete e / o le configurazioni tecniche.
+                        Fatte salve le disposizioni di legge, le presenti condizioni sono soggette al diritto italiano e tutte le controversie concernenti la loro applicazione e interpretazione saranno sottoposte alla cognizione esclusiva del Tribunale di Modena.
+                      </p>
+                      
+                      <p>
+                        5. Limitazione di responsabilità
+                        Fatte salve le disposizioni inderogabili di legge, Il Titolare del Sito Internet non sarà responsabile per qualsiasi danno o lesione conseguenti all’uso del materiale di cui all’articolo 1 nonché derivanti da qualsiasi interruzione nella esecuzione del programma, errore, omissione, interruzione, difetto, ritardo nell’operazione di trasmissione, virus o caduta di linea.
+                        Il Titolare del Sito Internet non sarà responsabile inoltre per qualsiasi danno o lesione che risultino dall’utilizzo o dalla incapacità di utilizzo del materiale incluso nel Sito o che derivino dalla condotta di altri utenti che violino le presenti condizioni.
+                        L’utente che intenda esercitare un diritto, una rivendicazione o un’azione contro un qualsiasi altro utente in merito all’utilizzo dei servizi offerti dal Sito si impegna a evitare qualsivoglia coinvolgimento del Titolare del Sito Internet e dei soggetti dal medesimo incaricati per la gestione del Sito.
+                        Il materiale in questo Sito potrebbe includere imprecisioni tecniche o errori tipografici.
+                        Il Titolare del Sito Internet può effettuare cambiamenti e miglioramenti in qualsiasi momento.
+                        Il materiale in questo sito è messo a disposizione “così com’è” e senza garanzia alcuna, espressa o implicita, in conformità alla legge applicabile e nei limiti da questa consentiti, il Titolare del Sito Internet non presta alcuna garanzia, incluse quelle di commerciabilità e idoneità a qualsivoglia utilizzo.
+                        Il Titolare del Sito Internet non garantisce che le funzioni contenute nel materiale saranno prive di interruzioni od esenti da errore, o che tali vizi saranno corretti, o che questo sito o il server che lo rende disponibile non siano esenti da virus o da componenti nocivi. Il Titolare del Sito Internet non fornisce dichiarazioni o garanzie in merito all’utilizzo o ai risultati dell’utilizzo del materiale in questo sito, per quanto riguarda la loro correttezza, accuratezza o affidabilità. le spese di riparazione, revisione o correzione saranno interamente a carico dell’utente e non del Titolare del Sito Internet. Ove le legislazioni nazionali applicabili al presente accordo, diverse dalla legge applicabile di seguito indicata, vietino l’esclusione di garanzia, l’esclusione suddetta non sarà applicabile.
+                      </p>
+                      
+                      <p>
+                        6. Limitazioni all’uso del materiale
+                       Il materiale proveniente dal presente Sito e da qualsiasi altro sito del World Wide Web posseduto, operato, in licenza o controllato dal Titolare del Sito Internet non può essere copiato, distribuito, modificato, ripubblicato, riprodotto, scaricato o trasmesso con qualsiasi mezzo, senza il precedente consenso scritto.
+                      </p>
 
-                          1. Condizioni d’uso del Sito
-
-                          Il Sito potrà essere oggetto di modifiche e aggiornamenti.
-                          L’utilizzo del Sito implica l’accettazione da parte dell’utente delle presenti condizioni d’uso e il loro impegno a rispettarle.
-                          Si informano gli utenti che tali condizioni possono essere modificate in qualsiasi momento.
-                        </p>
-
-                        <p>
-                          2. Proprietà Intellettuale
-                           Il contenuto del Sito, compresi, senza limitazione, qualsiasi logo, marchio o foto sul Sito sono protetti in base ai diritti di proprietà intellettuale, o di qualsiasi altra disposizione legale applicabile. Sono rispettati i diritti di proprietà intellettuale di terze parti, e tutte le disposizioni di legge per tutelare gli interessi di terzi. Tuttavia, se si pensa che il Sito possa violare qualsivoglia proprio diritto, Vi invitiamo a scriverci direttamente presso i contatti summenzionati per procedere alla rimozione del contenuto in questione dopo aver ricevuto notifica scritta del titolare del diritto d’autore debitamente verificato.
-                        </p>
-                        
-                        <p>
-                          3. Link a altri siti
-                          Il Sito contiene collegamenti ad altri siti web. Il Titolare del Sito Internet non ha alcun controllo sugli stessi, né può controllarne o verificarne il contenuto. Spetta quindi all’utente prendere conoscenza degli impegni di ciascun blog / social network / sito web che visita. In particolare, non abbiamo controllo sulle pratiche dei siti di terze parti per la raccolta, il trattamento dei dati personali e della privacy. Spetta quindi all’utente prendere conoscenza degli impegni del Titolare del Sito Internet sulla privacy, ma anche degli impegni di qualsivoglia blog o social network o sito associato con il sito che contiene tale link, e utilizzare solo i siti di cui si accettano il contenuto e le regole d’utilizzo.
-                          Il Titolare del Sito Internet declina ogni responsabilità per qualsiasi collegamento ad un altro sito web e che fa riferimento al Sito. Il Sito può essere associato a tale link e il suo contenuto non specificatamente autorizzato dal Titolare del Sito Internet.
-                        </p>
-                        
-                        <p>
-                          4. Responsabilità
-                          Il Titolare del Sito Internet svolge un regolare aggiornamento dei suoi contenuti e dei dispositivi in atto sul sito per consentire l’accesso e l’uso del Sito nelle migliori condizioni per l’utente. Tuttavia, il Titolare del Sito Internet non può garantire la tempestività, accuratezza e completezza dei contenuti sul Web.
-                          L’utente in questo contesto, è pienamente consapevole del fatto che i contenuti presenti nel Sito sono a titolo indicativo.
-                          Inoltre, Il Titolare del Sito Internet si riserva il diritto di apportare modifiche al sito in qualsiasi momento lo ritenga opportuno, e non può dunque garantire all’utente l’accesso a tutto il Sito in qualsiasi momento, senza interruzione in tempo utile, in sicurezza e senza errori.
-                          Si precisa che i cambiamenti possono essere effettuati sulla natura o portata dei servizi disponibili.
-                          Si precisa che Il Titolare del Sito Internet non potrà essere ritenuto responsabile per danni ad un utente causati da azioni di terzi che per mezzo di tecniche sleali abbiano utilizzato le informazioni pubblicate sul sito.
-                          Il Titolare del Sito Internet non può essere ritenuto responsabile per eventuali danni subiti dall’utente date le caratteristiche della rete e / o le configurazioni tecniche.
-                          Fatte salve le disposizioni di legge, le presenti condizioni sono soggette al diritto italiano e tutte le controversie concernenti la loro applicazione e interpretazione saranno sottoposte alla cognizione esclusiva del Tribunale di Modena.
-                        </p>
-                        
-                        <p>
-                          5. Limitazione di responsabilità
-                          Fatte salve le disposizioni inderogabili di legge, Il Titolare del Sito Internet non sarà responsabile per qualsiasi danno o lesione conseguenti all’uso del materiale di cui all’articolo 1 nonché derivanti da qualsiasi interruzione nella esecuzione del programma, errore, omissione, interruzione, difetto, ritardo nell’operazione di trasmissione, virus o caduta di linea.
-                          Il Titolare del Sito Internet non sarà responsabile inoltre per qualsiasi danno o lesione che risultino dall’utilizzo o dalla incapacità di utilizzo del materiale incluso nel Sito o che derivino dalla condotta di altri utenti che violino le presenti condizioni.
-                          L’utente che intenda esercitare un diritto, una rivendicazione o un’azione contro un qualsiasi altro utente in merito all’utilizzo dei servizi offerti dal Sito si impegna a evitare qualsivoglia coinvolgimento del Titolare del Sito Internet e dei soggetti dal medesimo incaricati per la gestione del Sito.
-                          Il materiale in questo Sito potrebbe includere imprecisioni tecniche o errori tipografici.
-                          Il Titolare del Sito Internet può effettuare cambiamenti e miglioramenti in qualsiasi momento.
-                          Il materiale in questo sito è messo a disposizione “così com’è” e senza garanzia alcuna, espressa o implicita, in conformità alla legge applicabile e nei limiti da questa consentiti, il Titolare del Sito Internet non presta alcuna garanzia, incluse quelle di commerciabilità e idoneità a qualsivoglia utilizzo.
-                          Il Titolare del Sito Internet non garantisce che le funzioni contenute nel materiale saranno prive di interruzioni od esenti da errore, o che tali vizi saranno corretti, o che questo sito o il server che lo rende disponibile non siano esenti da virus o da componenti nocivi. Il Titolare del Sito Internet non fornisce dichiarazioni o garanzie in merito all’utilizzo o ai risultati dell’utilizzo del materiale in questo sito, per quanto riguarda la loro correttezza, accuratezza o affidabilità. le spese di riparazione, revisione o correzione saranno interamente a carico dell’utente e non del Titolare del Sito Internet. Ove le legislazioni nazionali applicabili al presente accordo, diverse dalla legge applicabile di seguito indicata, vietino l’esclusione di garanzia, l’esclusione suddetta non sarà applicabile.
-                        </p>
-                        
-                        <p>
-                          6. Limitazioni all’uso del materiale
-                         Il materiale proveniente dal presente Sito e da qualsiasi altro sito del World Wide Web posseduto, operato, in licenza o controllato dal Titolare del Sito Internet non può essere copiato, distribuito, modificato, ripubblicato, riprodotto, scaricato o trasmesso con qualsiasi mezzo, senza il precedente consenso scritto.
-                        </p>
-
-                        <p>
-                          7. Proposte
-                          Tutte le osservazioni, suggerimenti, idee, materiali grafici o altra informazione comunicata al Titolare del Sito Internet (di seguito denominati collettivamente “Informazione”) diverrà proprietà della medesima. L’utente rinuncia fin d’ora ad ogni compenso e/o remunerazione non solo economica ma a qualsivoglia titolo. L’Informazione non sarà soggetta ad alcun obbligo di riservatezza. Il Titolare titolare della pagina web sarà libero di utilizzare l’Informazione come meglio ritiene senza che per questo derivi al titolare della pagina web medesima alcun obbligo né alcuna responsabilità.
-                          Il mittente prende atto di essere responsabile di qualsiasi materiale inviato; il mittente, e non Il Titolare del Sito Internet, ha la totale responsabilità del messaggio, inclusa la sua legalità, attendibilità, appropriatezza, originalità e conformità ai diritti di proprietà.
-                          Ai sensi e per gli effetti degli articoli 1341 e 1342 del Codice Civile l’utente dichiara espressamente di accettare le pattuizioni di cui agli articoli 4. “Responsabilità (foro competente)”; 5. “Limitazioni di responsabilità” .  
-                        </p>
-                      </h5>
-                    </div>
+                      <p>
+                        7. Proposte
+                        Tutte le osservazioni, suggerimenti, idee, materiali grafici o altra informazione comunicata al Titolare del Sito Internet (di seguito denominati collettivamente “Informazione”) diverrà proprietà della medesima. L’utente rinuncia fin d’ora ad ogni compenso e/o remunerazione non solo economica ma a qualsivoglia titolo. L’Informazione non sarà soggetta ad alcun obbligo di riservatezza. Il Titolare titolare della pagina web sarà libero di utilizzare l’Informazione come meglio ritiene senza che per questo derivi al titolare della pagina web medesima alcun obbligo né alcuna responsabilità.
+                        Il mittente prende atto di essere responsabile di qualsiasi materiale inviato; il mittente, e non Il Titolare del Sito Internet, ha la totale responsabilità del messaggio, inclusa la sua legalità, attendibilità, appropriatezza, originalità e conformità ai diritti di proprietà.
+                        Ai sensi e per gli effetti degli articoli 1341 e 1342 del Codice Civile l’utente dichiara espressamente di accettare le pattuizioni di cui agli articoli 4. “Responsabilità (foro competente)”; 5. “Limitazioni di responsabilità” .  
+                      </p>
+                    </h5>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </footer>
+      </div>
+  </footer>
+    
 
 
 

@@ -1,7 +1,5 @@
 *{
     font-family: 'Amatic SC', cursive;
-    padding: 0;
-    margin: 0;
 }
 
 a{
@@ -9,11 +7,15 @@ a{
 }
 
 /*Nav section*/
+.nav-section button{
+    color: white;
+}
 .navbar{
     padding: 20px 30px;
     font-size: 2rem;
     
 }
+
 .navbar-brand{
     font-size: 1.1em;
     color: white;
@@ -22,62 +24,80 @@ a{
 
 /*Intro section*/
 #home{
-    padding-bottom: 10%;
+    margin-top: 5%
 }
 
-/*About us*/
-#about
-{
-    padding-top: 2%;
-    padding-bottom: 2%;
+.business-image img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*About section*/
+#about{
+    margin: 10% 5%;
+    color: whitesmoke;
 }
 
 .about{
-    margin-top: 10%;
-    padding: 2%;
-    border: 2px solid rgb(47, 186, 47);
-}
-
-.about h1{
-    padding: 5% 0;
-}
-
-.img-business{
+    border: 4px solid rgb(47, 186, 47);
+    border-radius: 30px;
     padding: 2% 2%;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+
+    background-image: url('images/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    opacity: 0.85;
 }
 
-/*Our products*/
+.description-about{
+    margin-top: 15%;
+}
 
-#products
-{
-    padding-top: 2%;
+/*Products section*/
+#products{
+    margin: 10% 5%;
+    color: white;
 }
 
 .products{
-    margin-top: 10%;
-    padding: 2%;
-    border: 2px solid rgb(238, 122, 122);
+    border: 4px solid rgb(238, 122, 122);
+    border-radius: 30px;
+    padding: 2% 2%;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
+
+    animation: change-bg 10s steps(2, jump-none) forwards infinite;
+    opacity: 0.85;
 }
 
-.products h1{
-    padding-top: 5%;
-    padding-bottom: 5%;
+@keyframes change-bg {
+    0%, 100%  { background: url(images/imgProduct/image1.jpg); }
+    20% { background: url(images/imgProduct/img2.jpg); }
+    40% { background: url(images/imgProduct/img3.jpg); }
 }
 
-.carousel-item img{
-    margin: 3% 0;
+.description-products{
+    margin-top: 15%;
 }
 
-/*Our menu*/
+/*Our menu section*/
 #menu
 {
-    padding-top: 2%;
+    margin: 10% 5%;
 }
 
 .menu{
-    margin-top: 10%;
-    padding: 2% ;
-    border: 2px solid rgb(47, 186, 47);
+    border: 4px solid rgb(47, 186, 47);
+    border-radius: 30px;
+    padding: 2% 2%;
+    justify-content: center;
+    justify-items: center;
+    height: 600px;
 }
 
 .menu h1{
@@ -92,93 +112,101 @@ hr{
 /*Order*/
 
 #order{
-    padding-top: 2%;
-}
-
-#order h1{
-    padding: 2% 0;
-
-
-}
-
-.form-group{
-    margin-left: 10%;
-}
-
-.form-control{
-    font-size: 1.5em;
-    width: 400px;
-}
-
-label{
-    font-size: 1.6em;
+    margin: 10% 5%;
 }
 
 .order{
-    border: 2px solid rgb(212, 71, 71);
-
-    margin-top: 10%;
+    border: 4px solid rgb(212, 71, 71);
+    border-radius: 30px;
+    padding: 0% 2%;
+    justify-content: center;
+    justify-items: center;
+    height: 650px;
 }
 
-.select{
+.order h1{
+    margin-top: 3%;
+}
+
+.order h3{
+    color: red;
+    font-size: 2.3em;
+    visibility: hidden;
+}
+
+#formOrder{
     margin-top: 5%;
+    
+}
+#orderName, #orderEmail, #orderTel, #selectProduct, #data, #selectHour{
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid rgb(212, 71, 71);
+    -webkit-transition: 0.5s;
+    transition: 0.5s
+}
+
+.name, .email, .tel, .select, .data, .hours{
+    margin-left: 10%;
+    margin-top: 0;
+    font-size: 1.8em;
 }
 
 #tortelini, #primi, #secondi,#deserti{
     color:rgb(212, 71, 71) ;
 }
 
-
 .btn{
-    width: 180px;
-    font-size: 1.6em;
-    border-radius: 45%;
+    width: 200px;
+    height: 70px;
+    font-size: 1.8em;
+    border-radius: 40%;
     border: 3px solid;
-    margin:3% 5%;
     opacity: 0.75;
-}
-
-.data{
-    margin-top: 5%;
-}
-
-.hours{
-    margin-top: 5%;
-}
-
-.hours #two, .hours #four{
-    margin-left: 5%;
+    justify-content: center;
+    
+    margin: 5%;
 }
 
 /*Contact us*/
-#form{
+#contacts{
+    margin: 10% 5%;
+}
+.contacts{
+    border: 4px solid rgb(47, 186, 47);
+    border-radius: 30px;
     justify-content: center;
     justify-items: center;
-}
-
-.contacts{
-    margin-top: 10%;
-    padding: 2%;
-    border: 2px solid rgb(47, 186, 47);
+    height: 700px;
 }
 
 .contacts h1{
-    padding: 2% 0;
+    padding: 3% 0;
 }
+
 .maps{
-    margin: 3% 3%;
+    margin: 0 3%;
 }
+
+
 .maps h3{
     padding: 3% 0;
 }
+
+.iframe{
+    width: 700px;
+    height: 400px;
+}
+
 .phone-email{
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .phone-email a{
     font-size: 2em;
     color: black;
 }
+
 .phone-email i{
     font-size: 2.8rem;
     padding: 10% 0;
@@ -194,10 +222,11 @@ label{
 
 /*Footer*/
 #footer{
-    margin-top: 10%;
+    margin: 10% 0 0 0;
     background-color: rgb(212, 71, 71);
     opacity: 0.75;
     color: white;
+    width: auto;
 }
 
 #footer i{
@@ -224,6 +253,7 @@ label{
     transform: scale(1.1);
     color: rgb(31, 168, 31);
 }
+
 .service .offcanvas{
     height: 600px;
     font-size: 1.4em;
@@ -244,122 +274,69 @@ label{
     color: rgb(31, 168, 31);
 }
 
-/*Sreen media max 960px*/
-@media only screen and (max-width: 940px) {
-    *{
-        padding: 0;
-        margin: 0;
-    }
 
-    .img-business{
-        margin-top: 5%;
+@media screen and (max-width: 880px) {
+    .offcanvas{
+        max-width: 60%;
     }
-
-    #about{
-        margin: 10% 3% 0 3%;
+    /*Intro section*/
+    .business-image img{
+        display: block;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
-
-    #products{
-        margin: 5% 3% 0 3%;
+    /*About section*/
+    .about{
+        height: 400px;
     }
-
-    #menu{
-        margin: 2% 3% 0 3%;
-    }
-
-    #order{
-        margin: 2% 3% 0 3%;
-    }
-
-    #contacts{
-        margin: 2% 3% 0 3%;
-    }
-
-    #footer{
-        margin-top: 4%;
-    }
-
-    .form-group{
-        padding: 0 2%;
-    }
-
-    .form-group label{
-        margin-left: 8%;
-    }
-
-    .form-control{
-        width: 270px;
-        margin-left: 8%;
+    .description-about{
+        margin-top: 20%;
     }
     
-    .buttons .btn{
-        width: 150px;
-        margin-top: 4%;
+    /*Products section*/
+    .products{
+        height: 400px;
     }
-    
+    .description-products{
+        margin-top: 20%;
+    }
+
+    /*Our menu section*/
+    .menu{
+        height: 800px;
+    }
+
+    /*Order section*/
+    .order{
+        height: auto;
+    }
+    #orderName, #orderEmail, #orderTel, #selectProduct, #data, #selectHour{
+        width: 250px;
+        justify-content: center;
+        justify-items: center;
+    }
     .btn{
         width: 150px;
-    }
-
-    iframe{
-        width: 300px;
-    }
-}
-
-
-/*Sreen media max 850px*/
-@media only screen and (max-width: 850px) {
-    *{
-        padding: 0;
-        margin: 0;
-    }
-
-    .img-business{
         margin-top: 5%;
-    }
-
-    #about{
-        margin: 10% 3% 0 3%;
-    }
-
-    #products{
-        margin: 5% 3% 0 3%;
-    }
-
-    #menu{
-        margin: 2% 3% 0 3%;
-    }
-
-    #order{
-        margin: 2% 3% 0 3%;
-    }
-
-    #contacts{
-        margin: 2% 3% 0 3%;
-    }
-
-    #footer{
-        margin-top: 4%;
-    }
-
-    .form-group{
-        padding: 0 2%;
-    }
-    .form-group label{
-        margin-left: 8%;
-    }
-
-    .form-control{
-        width: 270px;
-        margin-left: 8%;
+        font-size: 1.3em;
+        justify-content: center;
+        justify-items: center;
     }
     
-    .buttons .btn{
-        width: 150px;
-        margin-top: 4%;
+    /*Contacts section*/
+    .contacts{
+        height: 600px;
+    }
+
+    .contacts h1{
+        margin-top: 3%;
     }
 
     iframe{
+        margin-top: 2%;
         width: 300px;
+        height: 200px;
     }
 }
