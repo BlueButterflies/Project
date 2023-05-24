@@ -10,7 +10,7 @@ const orderName =  document.getElementById('orderName');
 
 //Send order without pay
 function sendWhatsapp(){
-    var bodyWhatsapp = `\t\nNome e Cognome: ${orderName.value}\t\n
+    var bodyWhatsapp = `Nome e Cognome: ${orderName.value}\t\n
         Email: ${orderEmail.value}\t\n
         Telefono: ${orderTel.value}\t\n
         Prodotto ordinato: ${selectProduct.value}\t\n
@@ -20,7 +20,7 @@ function sendWhatsapp(){
 
         //This will be called when the link is clicked
         var sMsg    = encodeURIComponent( bodyWhatsapp );
-        var whatsapp_url = `https://wa.me/393462168158?text=${sMsg}`;
+        var whatsapp_url = `https://wa.me/12235456787?text=${sMsg}`;
 
     if (orderName.value === "" || orderEmail.value === "" || orderTel.value === "" || selectProduct.value === "Seleziona" || selectData.value === "GG/MM/AAAA" || selectHour.value === "Seleziona") {
         alert("Conrtola se hai riempito tutti i campi.")
