@@ -20,8 +20,8 @@ function sendWhatsapp(){
 
         //This will be called when the link is clicked
         var sMsg    = encodeURIComponent( bodyWhatsapp );
-        var whatsapp_url = `//wa.me/12235456787?text=${sMsg}`;
-https:
+        var whatsapp_url = `/https:/wa.me/12235456787?text=${sMsg}`;
+
     if (orderName.value === "" || orderEmail.value === "" || orderTel.value === "" || selectProduct.value === "Seleziona" || selectData.value === "GG/MM/AAAA" || selectHour.value === "Seleziona") {
         alert("Conrtola se hai riempito tutti i campi.")
 
