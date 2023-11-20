@@ -56,8 +56,8 @@ btn.addEventListener('click', function(e) {
 
     Email.send({
     SecureToken : "7d3a7a88-2a06-4732-9627-ca6cc311e2da",
-    To : 'sisayasenova@gmail.com',
-    From : 'sisayasenova@gmail.com',
+    To : 'email@gmail.com',
+    From : 'email@gmail.com',
     Subject : "Contact for work project",
     Body : bodyOrder
     });
